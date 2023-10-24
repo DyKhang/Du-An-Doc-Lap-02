@@ -4,13 +4,105 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MODULARS</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- Style CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <!-- Embed Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Public+Sans:wght@500;800&family=Sonsie+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    Test
+  <body style="height: 5000px">
+    <!-- Header -->
+    <header class="header header--fixed">
+      <div class="container">
+        <img src="./assets/icons/Logo.svg" alt="MODULARS" class="logo" />
+        <nav class="header-navbar">
+          <ul class="header-navbar__list">
+            <li class="header-navbar__item header-navbar__item--active">
+              <a href="#!">Home</a>
+            </li>
+            <li class="header-navbar__item">
+              <a href="#!">About</a>
+            </li>
+            <li class="header-navbar__item">
+              <a href="#!">Blog</a>
+            </li>
+            <li class="header-navbar__item">
+              <a href="#!">Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="#!" class="header__cta btn">Sign Up</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <section class="hero__content">
+          <h1 class="hero__heading">We’re a creative design agency.</h1>
+          <p class="hero__desc">
+            A brilliant, modular agency template for startup’s build yours
+            toady.
+          </p>
+          <div class="hero__row">
+            <a href="#!" class="hero__git btn">Get in touch</a>
+            <div class="hero__half-circle">
+              <button class="hero__play-btn">
+                <img src="./assets/icons/Hero-Play.svg" alt="" />
+              </button>
+            </div>
+            <a href="#!" class="hero__wacthvd">Watch Video</a>
+          </div>
+        </section>
+        <div class="hero__media">
+          <figure class="hero__images">
+            <img src="./assets/imgs/Hero-1.jpg" alt="" class="hero__image" />
+            <img src="./assets/imgs/Hero-2.jpg" alt="" class="hero__image" />
+            <img src="./assets/imgs/Hero-3.jpg" alt="" class="hero__image" />
+          </figure>
+        </div>
+        <div class="hero__bg-blur"></div>
+
+        <img
+          src="./assets/icons/Branch-Flower1.svg"
+          alt=""
+          class="hero__flower-branch-top"
+        />
+        <img src="./assets/icons/Flower.svg" alt="" class="hero__flower-top" />
+
+        <img
+          src="./assets/icons/Branch-Flower2.svg"
+          alt=""
+          class="hero__flower-branch-bottom"
+        />
+        <img
+          src="./assets/icons/Flower.svg"
+          alt=""
+          class="hero__flower-bottom"
+        />
+      </div>
+    </section>
   </body>
 </html>

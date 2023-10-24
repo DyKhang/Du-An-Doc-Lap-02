@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* Common */
+.container {
+  width: 1140px;
+  max-width: calc(100% - 50px);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  min-width: 173px;
+  line-height: 57px;
+  background-color: #143c3c;
+  display: flex;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Header */
+.header {
+  padding-top: 28px;
+  padding-bottom: 13px;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.header--fixed {
+  position: sticky;
+  top: -15px;
+}
+
+.header .container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header .container::after {
+  position: absolute;
+  bottom: -13px;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #dddcdc 51.09%,
+    rgba(212, 212, 212, 0) 99.68%
+  );
+}
+
+.logo {
+  width: 146.4px;
+  height: 26.236px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.header-navbar {
+  margin-left: 406px;
+}
+
+.header-navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.header-navbar__item a {
+  color: #575d5e;
+  font-family: Public Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 155.556%;
+}
+
+.header-navbar__item--active a {
+  position: relative;
+  color: #152427;
+  font-family: Public Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 155.556%;
+}
+
+.header-navbar__item--active a::after {
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  bottom: -32px;
+  z-index: 1;
+  content: "";
+  width: 16px;
+  height: 2px;
+  background-color: #143c3c;
+}
+
+.header__cta {
+  margin-left: auto;
+  color: #fff;
+  font-family: Public Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero .container {
+  display: flex;
+  gap: 76px;
+  position: relative;
+}
+
+.hero__content {
+  margin-top: 103px;
+}
+
+.hero__heading {
+  max-width: 368px;
+  color: #152427;
+  font-family: Public Sans;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 120%;
+}
+
+.hero__desc {
+  margin-top: 20px;
+  max-width: 341px;
+  color: var(--text-color-black-gray, #575d5e);
+  font-family: Public Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 155.556%;
+}
+
+.hero__row {
+  display: flex;
+  margin-top: 42px;
+  align-items: center;
+}
+
+.hero__git {
+  color: var(--text-color-white, #fff);
+  font-family: Public Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hero__play-btn {
+  width: 44px;
+  height: 44px;
+  background-color: #83a17d;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  rotate: 45deg;
+}
+
+.hero__half-circle {
+  margin-left: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: #143c3c 4px solid;
+  border-color: #143c3c transparent transparent #143c3c;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  rotate: -45deg;
+  transition: 0.25s;
+}
+
+.hero__half-circle:hover {
+  transform: rotate(180deg);
+}
+
+.hero__wacthvd {
+  margin-left: 7px;
+  color: #152427;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 166.667%;
+}
+
+.hero__media {
+  margin-top: 60px;
+}
+
+.hero__images {
+  display: flex;
+  gap: 20px;
+}
+
+.hero__image {
+  width: 202px;
+  height: 466px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.hero__image:nth-child(2) {
+  margin-top: 137px;
+}
+
+.hero__bg-blur {
+  position: absolute;
+  z-index: -1;
+  top: 182px;
+  right: 175px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #4dbb9a;
+  filter: blur(137px);
+}
+
+.hero__flower-top {
+  position: absolute;
+  top: 35.61px;
+  left: 254.61px;
+}
+
+.hero__flower-branch-top {
+  position: absolute;
+  top: 27.93px;
+  left: 297px;
+}
+
+.hero__flower-bottom {
+  position: absolute;
+  top: 561.06px;
+  right: 32.12px;
+}
+
+.hero__flower-branch-bottom {
+  position: absolute;
+  top: 349px;
+  right: 73.64px;
+  transform: rotate(-3.05deg);
+}
