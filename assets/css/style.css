@@ -5,6 +5,7 @@
 html {
   font-family: "Poppins", sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -935,17 +936,18 @@ a {
 .project-video__wrap {
   position: relative;
   margin-top: 65px;
-  width: 1140px;
-  height: 544px;
+}
+
+.project__video {
+  width: 100%;
   border-radius: 22px;
-  background-image: url(../imgs/Video.jpg);
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .project__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -960,14 +962,14 @@ a {
 .project__flower {
   position: absolute;
   right: 130.28px;
-  bottom: 603.31px;
+  bottom: 705.31px;
   transform: rotate(176.985deg);
 }
 
 .project__flower-branch {
   position: absolute;
   top: 121px;
-  right: 118.7px;
+  right: 121.7px;
 }
 
 /* Features */
