@@ -788,7 +788,6 @@ a {
 
 .process-row:hover .process-row__number,
 .process-row:hover .process-row__title {
-  transform: translateX(10px);
   transform: translateY(-22px);
 }
 
@@ -857,7 +856,6 @@ a {
 }
 
 .process-row__cta {
-  animation-delay: 0.25;
   display: none;
   position: absolute;
   bottom: 49px;
